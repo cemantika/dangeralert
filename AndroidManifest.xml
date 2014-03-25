@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dangeralert.dangeralert"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="17" />
+
+    <permission
+        android:name="com.dangeralert.dangeralert.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" /><!-- Internet access -->
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!-- Read and Write files -->
+    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /><!-- GPS location -->
+    
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.dangeralert.dangeralert.permission.MAPS_RECEIVE" /><!-- Google Maps API v2 -->
+    
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /><!-- Serviços do Google -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBVjd-aBX3lHkfaX9f01VjgPbUz0r2blPw" />
+
+        <activity
+            android:name="com.dangeralert.dangeralert.MainActivity"
+            android:label="@string/app_name2"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dangeralert.dangeralert.AddNotificationActivity"
+            android:label="@string/title_activity_add_notification"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.dangeralert.dangeralert.RemoveNotificationActivity"
+            android:label="@string/title_activity_remove_notification" >
+        </activity>
+        <activity
+            android:name="com.dangeralert.dangeralert.ShowMapActivit"
+            android:label="@string/title_activity_show_map" >
+        </activity>
+        <activity
+            android:name="com.dangeralert.dangeralert.ShowNotsOnMap"
+            android:label="@string/title_activity_show_nots_on_map" >
+        </activity>
+    </application>
+
+</manifest>

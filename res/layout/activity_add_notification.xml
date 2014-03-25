@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="@color/actMain_bg_black"
+    tools:context=".AddNotificationActivity" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="35dp">
+
+        <TextView
+            android:id="@+id/AddNot_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/actMain_tx2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/actMain_tx1_white" />
+
+    </RelativeLayout>
+	
+    <TextView
+        android:id="@+id/AddNot_textView4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/actNot_tx4"
+        android:textColor="@color/actMain_tx1_white" />
+
+    <Spinner
+        android:id="@+id/AddNot_spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/actMain_tx1_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:prompt="@color/actMain_tx1_white" />
+    
+    <TextView
+        android:id="@+id/AddNot_textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/actNot_tx2"
+        android:textColor="@color/actMain_tx1_white" />
+
+    <EditText
+        android:id="@+id/AddNot_editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/actNot_ed1"
+        android:inputType="textCapWords|textPersonName"
+        android:textColor="@color/actMain_tx1_white"
+        android:textCursorDrawable="@null" />
+
+    <TextView
+        android:id="@+id/AddNot_textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/actNot_tx3"
+        android:textColor="@color/actMain_tx1_white" />
+
+    <EditText
+        android:id="@+id/AddNot_editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.67"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/actNot_ed2"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textColor="@color/actMain_tx1_white"
+        android:textCursorDrawable="@null" >
+
+    </EditText>
+    
+    <Button
+        android:id="@+id/AddNot_button3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="adjustOnTheMap"
+        android:text="@string/actNot_bt3"
+        android:textColor="@color/actMain_tx1_white" />
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_vertical"
+    	android:orientation="horizontal">
+
+	    <Button
+	        android:id="@+id/AddNot_button1"
+	        android:layout_width="145dp"
+	        android:layout_height="wrap_content"
+	        android:onClick="cancelNotification"
+	        android:text="@string/actNot_bt1"
+	        android:textColor="@color/actMain_tx1_white" />
+	    
+	    <Button
+            android:id="@+id/AddNot_button2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="saveNotification"
+            android:text="@string/actNot_bt2"
+            android:textColor="@color/actMain_tx1_white" />
+    </LinearLayout>
+    
+</LinearLayout>

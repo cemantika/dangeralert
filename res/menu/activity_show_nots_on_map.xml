@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/stopMapRefresh"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_show_nots_on_map1"/>
+    
+    <item
+        android:id="@+id/ContinueMapRefresh"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_show_nots_on_map2"/>
+
+</menu>

@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Main_layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/actMain_bg_black"
+    tools:context=".MainActivity" >
+    
+    <Button
+        android:id="@+id/Main_button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="103dp"
+        android:layout_toLeftOf="@+id/Main_button2"
+        android:text="@string/actMain_bt1"
+        android:onClick="activate"
+        android:textColor="@color/actMain_tx1_white" />
+
+    <Button
+        android:id="@+id/Main_button2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Main_button1"
+        android:layout_alignBottom="@+id/Main_button1"
+        android:layout_alignParentRight="true"
+        android:text="@string/actMain_bt2"
+        android:onClick="deactivate"
+        android:textColor="@color/actMain_tx1_white" />
+
+    <Button
+        android:id="@+id/Main_button3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Main_button2"
+        android:text="@string/actMain_bt3"
+        android:onClick="addNotification"
+        android:textColor="@color/actMain_tx1_white" />
+    
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Main_button3"
+        android:onClick="removeNotification"
+        android:textColor="@color/actMain_tx1_white"
+        android:text="@string/actMain_bt4" />
+
+    <TextView
+        android:id="@+id/Main_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/actMain_tx2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/actMain_tx2_red" />
+    
+    <TextView
+        android:id="@+id/Main_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Main_textView2"
+        android:layout_centerHorizontal="true"
+        android:text="@string/actMain_tx3"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/actMain_tx2_red" />
+    
+    <ImageView
+        android:id="@+id/Main_imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Main_button1"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/actMain_img1"
+        android:src="@drawable/radar_off" />
+
+</RelativeLayout>
+
+<!-- 
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Main_layout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="@color/actMain_bg_black"
+    tools:context=".MainActivity" >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="35dp">
+        
+	    <TextView
+	        android:id="@+id/Main_textView2"
+	        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+	        android:text="@string/actMain_tx2"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="@color/actMain_tx2_red" />
+	    
+	</RelativeLayout>
+	
+    <ImageView
+        android:id="@+id/Main_imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/actMain_img1"
+        android:src="@drawable/radar_off" />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_vertical"
+    	android:orientation="horizontal">
+    
+	    <Button
+	        android:id="@+id/Main_button1"
+	       	android:layout_width="145dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/actMain_bt1"
+	        android:onClick="activate"
+	        android:textColor="@color/actMain_tx1_white" />
+	
+	    <Button
+	        android:id="@+id/Main_button2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/actMain_bt2"
+	        android:onClick="deactivate"
+	        android:textColor="@color/actMain_tx1_white" />
+	    
+	</LinearLayout>
+
+    <Button
+        android:id="@+id/Main_button3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/actMain_bt3"
+        android:onClick="addNotification"
+        android:textColor="@color/actMain_tx1_white" />
+    
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="removeNotification"
+        android:textColor="@color/actMain_tx1_white"
+        android:text="@string/actMain_bt4" />
+
+</LinearLayout>
+
+ -->
